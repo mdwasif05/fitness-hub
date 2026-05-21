@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Hub Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Fitness Hub</h1>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Programs</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Transform Your Body,<br>Transform Your Life.</h2>
+        <p>
+          Achieve your dream fitness goals with expert workouts,
+          healthy nutrition plans, and daily motivation.
+        </p>
+
+        <a href="#blog" class="btn">Start Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+    <h2 class="section-title">Latest Fitness Articles</h2>
+
+    <div class="blog-grid">
+
+      <!-- Blog Post 1 -->
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="Workout">
+
+        <div class="blog-content">
+          <span class="category">Beginner Workouts</span>
+
+          <h3>10 Best Full-Body Workouts for Beginners</h3>
+
+          <p>
+            Starting your fitness journey can feel overwhelming.
+            These beginner-friendly full-body workouts will help
+            you build strength, improve stamina, and burn calories.
+          </p>
+
+          <h4>Top Exercises:</h4>
+
+          <ul>
+            <li>Squats</li>
+            <li>Push-ups</li>
+            <li>Jumping Jacks</li>
+            <li>Lunges</li>
+            <li>Mountain Climbers</li>
+            <li>Plank Hold</li>
+            <li>Burpees</li>
+            <li>Glute Bridges</li>
+            <li>High Knees</li>
+            <li>Dead Bugs</li>
+          </ul>
+
+          <p>
+            Perform each exercise for 30–45 seconds and repeat
+            the circuit 3 times for a complete workout.
+          </p>
+
+          <button class="read-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop" alt="Nutrition">
+
+        <div class="blog-content">
+          <span class="category">Nutrition</span>
+
+          <h3>Healthy Eating Habits for Faster Results</h3>
+
+          <p>
+            Nutrition plays a huge role in fitness transformation.
+            Learn how proper meals and hydration improve your energy,
+            recovery, and performance.
+          </p>
+
+          <button class="read-btn">Read More</button>
+        </div>
+      </article>
+
+          <!-- Blog Post 3 -->
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Transformation">
+
+        <div class="blog-content">
+          <span class="category">Success Story</span>
+
+          <h3>How Rahul Lost 20kg in 6 Months</h3>
+
+          <p>
+            Read Rahul’s inspiring transformation story and discover
+            how consistency, healthy habits, and workouts changed his life.
+          </p>
+
+          <button class="read-btn">Read More</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+    <!-- Challenge Section -->
+  <section class="challenge">
+    <div class="challenge-box">
+      <h2>30-Day Fitness Challenge</h2>
+      <p>
+        Push your limits with our 30-day transformation challenge.
+        Daily workouts, healthy habits, and powerful motivation.
+      </p>
+
+      <a href="#contact" class="btn">Join Challenge</a>
+    </div>
+  </section>
+
+    <!-- Success Stories -->
+      <div class="story-card">
+        <h3>Priya Sharma</h3>
+        <p>
+          “I gained confidence and improved my health after following
+          Fitness Hub workouts for just 4 months.”
+        </p>
+      </div>
+
+      <div class="story-card">
+        <h3>Arjun Verma</h3>
+        <p>
+          “The workout routines and meal tips completely transformed
+          my lifestyle and energy levels.”
+        </p>
+      </div>
+
+      <div class="story-card">
+        <h3>Sneha Gupta</h3>
+        <p>
+          “Fitness Hub kept me motivated every day.
+          I lost 12kg naturally.”
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+<section class="bmi-section">
+  <h2 class="section-title">BMI Calculator</h2>
+
+  <div class="bmi-container">
+
+    <div class="bmi-box">
+      <input type="number" id="height" placeholder="Enter Height (cm)">
+
+      <input type="number" id="weight" placeholder="Enter Weight (kg)">
+
+      <button onclick="calculateBMI()">Calculate BMI</button>
+
+      <div id="result"></div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe for Weekly Fitness Tips</h2>
+
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h2>Fitness Hub</h2>
+
+    <p>
+      Your daily source for workouts, motivation, and healthy living.
+    </p>
+
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Facebook</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Fitness Hub Blog. All Rights Reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

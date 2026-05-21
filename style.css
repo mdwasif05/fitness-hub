@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: white;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(0,0,0,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #1eff00;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.65);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(45deg, #1eff00, orange);
+  color: black;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #1eff00;
+}
+
+/* Feature Section */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #181818;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid #222;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: orange;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  color: orange;
+}
+
+/* Blog */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #181818;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 25px;
+}
+
+.category {
+  color: orange;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.blog-content h3 {
+  margin: 15px 0;
+  font-size: 26px;
+}
+
+.blog-content ul {
+  margin: 15px 0 20px 20px;
+}
+
+.read-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  background: #1eff00;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Challenge */
+.challenge {
+  background: linear-gradient(45deg, #1eff00, orange);
+  color: black;
+  text-align: center;
+}
+
+.challenge-box h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.challenge-box p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Stories */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.story-card {
+  background: #181818;
+  padding: 30px;
+  border-left: 5px solid orange;
+  border-radius: 15px;
+}
+
+.story-card h3 {
+  color: #1eff00;
+  margin-bottom: 15px;
+}
+
+/* BMI Calculator */
+.bmi-section {
+  background: #111;
+  text-align: center;
+}
+
+.bmi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-box {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.bmi-box input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.bmi-box button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #1eff00, orange);
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bmi-box button:hover {
+  transform: scale(1.03);
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1eff00;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  background: #121212;
+}
+
+.newsletter h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 15px;
+  width: 320px;
+  border-radius: 50px;
+  border: none;
+}
+
+.newsletter button {
+  padding: 15px 30px;
+  border: none;
+  background: orange;
+  color: black;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: black;
+}
+
+footer h2 {
+  color: #1eff00;
+  margin-bottom: 15px;
+}
+
+.socials {
+  margin: 20px 0;
+}
+
+.socials a {
+  color: orange;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h2 {
+    font-size: 42px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .challenge-box h2 {
+    font-size: 36px;
+  }
+
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  background: linear-gradient(45deg, #1eff00, orange);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #f4f4f4;
+  color: #111;
+}
+
+body.light-mode .navbar {
+  background: white;
+}
+
+body.light-mode .nav-links a {
+  color: black;
+}
+
+body.light-mode .feature-card,
+body.light-mode .blog-card,
+body.light-mode .story-card,
+body.light-mode .bmi-box {
+  background: white;
+  color: black;
+}
+
+body.light-mode .newsletter {
+  background: #eaeaea;
+}
+
+body.light-mode footer {
+  background: #dcdcdc;
+  color: black;
+}
+
+body.light-mode .section-title {
+  color: #0f9d00;
+}
