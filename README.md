@@ -13,7 +13,7 @@ Fitness Hub is a modern and responsive fitness blog website created to help user
 - Mobile Friendly Design
 
 ## Tech Stack
-- React.js
-- Tailwind CSS
+- HTML
+- CSS
 - Firebase Authentication
 - JavaScript
